@@ -6,8 +6,13 @@ pipleline{
     }
   }
 
+  tools {
+    jdk 'Java17'
+    maven 'Maven3'
+  }
+
   stages{
-    stage ("Cleanup WOrkspace"){
+    stage ("Cleanup Workspace"){
       steps {
         cleanWs()
       }
